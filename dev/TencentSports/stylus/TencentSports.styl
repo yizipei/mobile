@@ -1,0 +1,377 @@
+@keyframes rank{
+	0%{top:0}
+	16%{top:-1.875rem}
+	32%{top:-1.875rem}
+	48%{top:-3.75rem}
+	64%{top:-3.75rem}
+	80%{top:-5.625rem}
+	100%{top:-5.625rem}
+}
+body
+	background #fafafa
+	.global
+		min-width 20rem
+		.header
+			width 20rem
+			height 2.75rem
+			overflow hidden
+			background url(http://mat1.gtimg.com/www/mobi/image/headerbg_v2.png) 8.6875rem top no-repeat
+			background-size 8.8125rem 2.75rem
+			border-bottom 0.125rem solid #317ecb
+			>a
+				display block
+				float left
+				width 7.4375rem
+				height 1.875rem
+				background-image url(http://mat1.gtimg.com/www/mobi/image/logo/logo_sports.png)
+				background-position 0 0 no-repeat
+				background-size 7.4375rem 1.875rem
+				margin 0.4375rem 0 0 0.625rem
+			.channels-btn
+				display block
+				float right
+				margin 0.875rem 0.875rem 0 0
+				width 1.375rem
+				height 1rem
+				background-image url(http://mat1.gtimg.com/www/mobi/image/icon.png)
+				background-repeat no-repeat
+				background-size 7.4375rem 1.3125rem
+				background-position -1.25rem 0
+		.channels
+			width 20rem
+			background #4998e7
+			padding 0.3125rem 0
+			display none
+			overflow hidden
+			>li
+				width 4rem
+				line-height 1.875rem
+				float left
+				font-size 1.125rem
+				display inline-block
+				text-align center
+				a
+					display block
+					color #fafafa	
+		.nav
+			width 20rem
+			background #3e86ce
+			overflow hidden
+			padding 0.3125rem 0
+			a
+				display block
+				width 4rem
+				color #fafafa
+				line-height 1.875rem
+				float left
+				font-size 1.125rem
+				text-align center
+			&>.current
+				background #226fbb
+			
+		.banner
+			width 20rem
+			overflow hidden
+			position relative
+			.banner-inner
+				display block
+				img
+					display block
+					width 20rem
+					max-height 10.3125rem
+					margin 0 auto
+				h2
+					display block
+					height 2rem
+					line-height 2rem
+					padding-right 2.25rem
+					color #fafafa
+					position absolute
+					left 0
+					bottom 0
+					right 0
+					font-size 1rem
+					text-align center
+					font-weight 400
+					background -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.9))
+		.aoyun
+			padding 0.3125rem 0.4375rem
+			line-height 1.875rem
+			font-family microsoft yahei
+			.gold-rank
+				border 0.0625rem solid #cddef0
+				padding-bottom 0.125rem
+				margin-bottom 0.25rem
+				font-size 0.875rem
+				color #010101
+				.title
+					padding 0 0.375rem
+					height 1.5625rem
+					line-height 1.5625rem
+					background url(http://mat1.gtimg.com/www/mobi/image/jpb_hd.png) no-repeat
+					background-size cover
+					color #006ace
+					font-weight bold
+				.run
+					height 1.875rem
+					overflow hidden
+					position relative
+					.run-rank
+						position absolute
+						width 19rem
+						height auto
+						overflow hidden
+						animation rank 8s linear infinite
+						ul
+							overflow hidden
+							width 19rem
+							li
+								float left
+								position relative
+								text-align center
+								width 2.6875rem
+								height 1.875rem
+								line-height 1.875rem
+								&.country
+									width 5.1875rem
+								i
+									display inline-block
+									width 0.875rem
+									height @width
+									margin 0 .1875rem -.125rem
+									background url(http://mat1.gtimg.com/www/mobi/image/rank_icons2.png) no-repeat
+									background-size 7.25rem auto
+									&.jin
+										background-position 0 0
+									&.yin
+										background-position -3.3125rem 0
+									&.tong
+										background-position -6.375rem 0
+								span
+									display inline-block
+									font-size .875rem
+									&:after
+										content ""
+										position absolute
+										left -0.0625rem
+										top 0.5rem
+										width 0.0625rem
+										height 0.9375rem
+										background-color #dcdcdc
+									&.num
+										width 1rem
+										height @width
+										line-height 1rem
+										margin 0 .375rem 0 .5rem
+										border-radius .1875rem
+										color #fff
+										font-size .75rem
+										background-color #60BB46
+									&.num1
+										background-color #FF8327				
+			.ad-link
+				display block
+				border .0625rem solid #b5dcf2
+				color #0695d7
+				text-align center
+				height 2.125rem
+				line-height 2.125rem
+				font-size 0.875rem
+				background-color #edfaff
+				overflow hidden
+				img
+					display inline
+					height 2.125rem
+					vertical-align middle
+					margin-right 0.3125rem
+				strong
+					font-weight bold
+				
+		.list
+			min-height 24.75rem
+			padding 0 .5rem
+			a
+				display block
+				overflow hidden
+				border-bottom .0625rem solid #eceef0
+				box-shadow 0 .0625rem .0625rem #fff
+				color #000
+				& .count
+					height 1.0625rem
+					line-height 1.0625rem
+					display inline-block
+					text-align right
+					float right
+					i
+						font-size .6875rem
+						color #878c92
+						float left
+					.flag
+						vertical-align middle
+						margin-right .25rem
+						width 1.5rem
+						height .875rem
+						background-image url(http://mat1.gtimg.com/www/mobi/image/flagicon.png)
+						background-repeat no-repeat
+						background-size 10.5rem .875rem
+						background-position -4.5rem 0
+					.com
+						margin-left .375rem
+						&:before
+							content ""
+							width 0.625rem
+							height 0.625rem
+							margin-right 0.1875rem
+							background-image url(http://mat1.gtimg.com/www/mobi/image/icon.png)
+							background-repeat no-repeat
+							background-position -5.25rem 0
+							background-size 7.4375rem
+							display inline-block
+							vertical-align middle
+				&.full
+					padding 0.625rem 0
+					>div
+						width 4.6875rem
+						height 	3.4375rem
+						line-height 3.1875rem
+						padding 0.0625rem
+						background #e9f1f4
+						border 0.0625rem solid #e0e0e0
+						float left
+						text-align center
+						>img
+							display inline-block
+							max-height 100%
+							max-width 100%
+							margin 0 auto
+							vertical-align middle
+					>h2
+						height 1.375rem
+						line-height 1.375rem
+						overflow hidden
+						font-size .9375em
+						padding-left .3125rem
+						margin-bottom .25rem
+					>p
+						padding 0 0 0 .3125rem
+						line-height 1.0625rem
+						font-size .8125em
+						overflow hidden
+						max-height 2.125rem
+						color #878c92
+						word-wrap break-word
+				&.photo
+					padding-bottom .3125rem
+					>h2
+						height 2.1875rem
+						line-height 2.1875rem
+						font-size .9375rem
+						overflow hidden
+						white-space nowrap
+					>div
+						width 100%
+						text-align center
+						background #e9f1f4
+						>img
+							display block
+							max-height 100%
+							max-width 100%
+							margin 0 auto
+							vertical-align middle
+					>p
+						padding .3125rem
+						line-height 1.0625rem
+						font-size .8125em
+						overflow hidden
+						max-height 2.125rem
+						color #878c92
+						word-wrap break-word
+						
+				&:visited
+					color #929292
+				&.full
+					padding .625rem 0
+		.more
+			color #b4b4b4
+			height 2.0625rem
+			line-height 2.0625rem
+			margin 0 .5rem .9375rem
+			border .0625rem solid #efefef
+			background-color #f6f5f5
+			text-align center
+			.gomore
+				font-size 1rem
+				color #b4b4b4
+				&:after
+					display inline-block
+					width 1.3125rem
+					height 1.3125rem
+					vertical-align -.3125rem
+					margin-left .3125rem
+					content ""
+					background url(http://mat1.gtimg.com/www/mobi/image/icon.png) no-repeat
+					background-position -2.625rem 0
+					background-size 7.4375rem 1.3125rem
+	
+					
+		.footnav
+			width 20rem
+			background #49535d
+			padding .75rem 0
+			overflow hidden
+			li
+				float left
+				width 4rem
+				height 1.75rem
+				line-height 1.75rem
+				font-size .9375rem
+				text-align center
+				>a
+					color #95a0ac
+		.footer
+			padding .625rem 2.8125rem .75rem 0
+			overflow hidden
+			position relative
+			background #404a54
+			>.footer-user
+				color #95a0ac
+				font-size .8125rem
+				line-height 1.5625rem
+				padding 0 .5rem
+				>span
+					display inline
+					font-weight 400
+					vertical-align middle
+			>.links
+				height 1.5625rem	
+				line-height 1.5625rem
+				color #565e61
+				font-size .8125rem
+				text-align left
+				>a
+					color #95a0ac
+					margin 0 0 0 .5rem
+					display inline
+			>.copyright
+				font-size .5rem
+				color #707982
+				text-align left
+				text-indent .5rem
+				white-space nowrap
+			>.top
+				display block
+				width 2.5rem
+				height 2.25rem
+				background #313a43
+				position absolute
+				right .75rem
+				top .625rem
+				&:after
+					display block
+					margin .625rem auto 0
+					width 1.5625rem
+					height .9375rem
+					content ""
+					background url(http://mat1.gtimg.com/www/mobi/image/icon.png) no-repeat
+					background-position -5.9375rem 0
+					background-size 7.4375rem 1.3125rem

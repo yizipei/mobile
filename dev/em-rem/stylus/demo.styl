@@ -1,0 +1,84 @@
+// html
+// 	font-size 50px
+// 	.rem
+// 		font-size 2rem
+// 		span
+// 			font-size 2rem
+// 	.em
+// 		font-size 2em
+// 		span
+// 			font-size 2em
+// 	.px
+// 		font-size 32px
+// 		span
+// 			font-size 64px
+/*px：父级px样式不会影响子级*/
+/*em：会根据父级font-size样式进行等比缩放*/
+/*rem会根据根级（html）进行等比缩放,默认值为16px*/
+body
+	background-color #efeff4
+	header
+		position relative
+		width 20rem
+		height 2rem
+		background-color black
+		h1
+			text-align center
+			font-size 1rem
+			line-height 2rem
+			color #fff
+	.container
+		width 20rem
+		.row
+			position relative
+			padding-left 2.8rem
+			width 20rem
+			height 2.1rem
+			background-color #fff
+			font-size 0.75rem
+			line-height 2.1rem
+			&:before
+				position absolute
+				top .525rem
+				left @top
+				display block
+				width 1.05rem
+				height @width
+				background-color #848484
+				content ""
+			&.one
+				margin .8rem 0
+			&.two:nth-of-type(2n)
+				margin-top .8rem
+				&:after
+					position absolute
+					bottom 0
+					left .5rem
+					width 19rem
+					border-bottom .05rem solid #d9d9d9
+					content ""
+			&.two:nth-of-type(2n+1)
+				margin-bottom .8rem
+	.footer
+		display flex
+		margin-top 13.4rem
+		width 20rem
+		height 2.25rem
+		border-top .05rem solid #d9d9d9
+		background-color #fff
+		a
+			flex-grow 1
+			font-size 0.45rem
+			text-align center
+
+			color #929292
+			&:hover
+				color #09bb07
+			&:before
+				display block
+				width 1rem
+				height @width
+				margin 0.2rem auto
+				background-color #848484
+				content ""
+				
